@@ -3,6 +3,7 @@ var ReactDOM = require('react-dom');
 var createReactClass = require('create-react-class');
 require('./css/index.css');
 import {Router, Route, browserHistory} from 'react-router';
+import { BrowserRouter as Router } from ‘react-router-dom’;
 
 
 
