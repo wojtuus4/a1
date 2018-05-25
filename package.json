@@ -1,16 +1,20 @@
 {
+  "homepage": "https://wojtuus4.github.io/a1",
   "name": "wojtek",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build",
-    "build": "webpack --d && webpack-dev-server --content-base src/ --inline --hot --port 1234 --history-api-fallback"
+    "build": "webpack --d && webpack-dev-server --content-base src/ --inline --hot --port 1234 --history-api-fallback",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "css-loader": "^0.28.11",
+    "gh-pages": "^1.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router": "^4.2.0",
